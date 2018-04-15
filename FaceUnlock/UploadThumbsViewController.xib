@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadThumbsViewController">
+            <connections>
+                <outlet property="addButton" destination="VqI-Xw-UIS" id="HjS-GL-giS"/>
+                <outlet property="imageScrollView" destination="fvI-Dk-cwG" id="ZT8-mC-hkP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="922-Rf-TBJ">
+                    <rect key="frame" x="0.0" y="79" width="320" height="489"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="fvI-Dk-cwG">
+                            <rect key="frame" x="0.0" y="9" width="320" height="175"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </scrollView>
+                        <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="35l-XJ-HVf">
+                            <rect key="frame" x="-8" y="223" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <items>
+                                <barButtonItem image="export_btn.png" style="plain" id="SZz-Oo-NZP"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="eJr-3d-KcT"/>
+                                <barButtonItem image="add_btn.png" id="Ljd-RA-4UC"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Ria-bX-r8j"/>
+                                <barButtonItem image="move_btn.png" id="aFb-dC-ef2"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="3Jy-qx-Ala"/>
+                                <barButtonItem image="delete_btn.png" style="plain" id="5Fy-Fj-6Tw">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </barButtonItem>
+                            </items>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </toolbar>
+                        <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="azI-GG-3QC">
+                            <rect key="frame" x="-8" y="300" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <items>
+                                <barButtonItem image="share_btn.png" style="plain" id="dv7-Mc-8st"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="MWF-CA-JML"/>
+                                <barButtonItem style="plain" systemItem="add" id="VqI-Xw-UIS">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="cgS-Je-LUT"/>
+                                <barButtonItem image="camera_btn.png" style="plain" id="KLg-rh-bIg"/>
+                            </items>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="aQb-Xb-VJi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B11-BQ-ToN">
+                            <rect key="frame" x="231" y="36" width="70" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="doneUploading:" destination="-1" eventType="touchUpInside" id="ASC-XV-SzD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="284" y="164"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_btn.png" width="22" height="22"/>
+        <image name="camera_btn.png" width="35" height="25"/>
+        <image name="delete_btn.png" width="20" height="22"/>
+        <image name="export_btn.png" width="21" height="22"/>
+        <image name="move_btn.png" width="22" height="22"/>
+        <image name="share_btn.png" width="22" height="25"/>
+    </resources>
+</document>
